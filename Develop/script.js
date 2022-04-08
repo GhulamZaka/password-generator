@@ -1,17 +1,18 @@
 // Assignment code here
 
+// Setting variables for prompts
+var confirmLowercase;
+var confirmUppercase;
+var confirmNumber;
+var confirmSpecialCharacter;
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+// Defining variables
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+lowerCase = ("abcdefghijklmnopqrstuvwxyz").split("");
+upperCase = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ").split("");
+numbers = ("0123456789") .split("");
+Specialcharacter = ("!@#$%^&*") .split("");
+var get = document.querySelector("#generate");
 
-  passwordText.value = password;
 
-}
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
