@@ -16,6 +16,7 @@ After validation of the prompts the password will be randomly generated.
 
 ## The URL of the GitHub repository
 
+https://github.com/GhulamZaka/password-generator
 
 
 ## Screenshoots
