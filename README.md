@@ -13,7 +13,7 @@ After validation of the prompts the password will be randomly generated.
 
 ## The URL of the deployed application
 
-https://github.com/GhulamZaka/password-generator
+https://ghulamzaka.github.io/password-generator/
 
 
 ## The URL of the GitHub repository
