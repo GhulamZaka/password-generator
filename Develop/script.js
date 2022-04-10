@@ -1,6 +1,6 @@
 // Assignment code here
 
-// Get reference to the #generate element
+// User input variables
 var generateBtn = document.querySelector("#generate");
 var enter;
 var confirmLowercase;
@@ -10,7 +10,7 @@ var confirmSpecialCharacter;
 var choices;
 
 
-// Defining variables
+// Defining variables values
 
 lowerCase = ("abcdefghijklmnopqrstuvwxyz").split("");
 upperCase = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ").split("");
@@ -30,6 +30,7 @@ function generatePassword() {
 
   // Ask for user input and lenght of the password
   var UserInput = parseInt
+  // First prompt for the user input
   enter = parseInt(prompt("Specify the lenght of your password."));
 
 // First if statement for validation process
@@ -38,7 +39,7 @@ if (!enter) {
 }
 // First prompt for the lenght of the password
 else if (enter < 8 || enter > 128) {
-  enter = alert("You can choose between 8 and 128.");
+  enter = alert("You can choose between (8-128) characters.");
 }
 
 // Series of prompts for passsword criteria
@@ -105,13 +106,12 @@ else if (confirmCharacter) {
 
 // Random selection of variables
 var password = [];
-  // Random selection for all variables selected 
+  // Random selection of all selected variables
   for (var i = 0; i < enter; i++) {
     var pickChoices = choices[Math.floor(Math.random() * choices.length)];
     password.push(pickChoices);
 }
-// This joins the password array and converts it to a string
-
+// converting the password array into a string
 var ps = password.join("");
 UserInput(ps);
 return ps;
